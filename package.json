@@ -1,0 +1,35 @@
+{
+	"name": "promethean",
+	"version": "0.0.0",
+	"description": "fun functions",
+	"license": "BSD-3",
+	"repository": "jfmercer/promethean",
+	"author": {
+		"name": "John F. Mercer",
+		"email": "john.f.mercer@gmail.com",
+		"url": "oprah.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && nyc ava"
+	},
+	"files": [
+		"index.js"
+	],
+  "private": true,
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"codecov": "^2.2.0",
+		"nyc": "^11.0.0",
+		"xo": "^0.18.2"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
